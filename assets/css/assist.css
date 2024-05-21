@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('../images/asistanim.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* İçeriği başlangıç, bitiş ve arada boşluk olacak şekilde düzenler */
+    align-items: center; /* İçeriği dikey eksende ortalar */
+    padding: 20px;
+    background-color: #005f73;
+}
+
+.logo {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+.auth-links a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #0a9396;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Butonların düzgün görünmesini sağla */
+    text-align: center; /* Metni ortala */
+    /* Eğer bütün butonların aynı genişlikte olmasını istiyorsanız aşağıdaki satırı ekleyin */
+    /* width: 120px; */
+}
+
+
+.auth-links a:hover {
+    background-color: #94d2bd;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    display: flex;
+    font-size: 23px;
+    margin-right: -200px;
+    justify-content: space-between; /* İçeriği başlangıç, bitiş ve arada boşluk olacak şekilde düzenler */
+    align-items: center; /* İçeriği dikey eksende ortalar */
+    flex-grow: 1; /* Başlığın genişliğini arttır ve ortala */
+    text-align: center;
+    color: #ffffff; /* Beyaz renk metin */
+
+}
+
+.hero p, p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.info-card2 {
+    margin-top: 4cm;
+    background: #fcfcfcc4;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.info-card2:hover {
+    transform: translateY(-5px);
+}
+
+.info-card2 h2 {
+    background-color: #e6e6e69e;
+    margin-top: 0;
+    color: #333;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.info-card2 p {
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+input[type="number"], .btn-update, .btn-cancel {
+    border: 2px solid #005f73;
+    background-color: #e6f6f5;
+    color: #005f73;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+input[type="number"]:focus, .btn-update:focus, .btn-cancel:focus {
+    outline: none;
+    border-color: #94d2bd;
+}
+
+.editingen {
+    background-color: #005f73;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.editingen:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .info-cards, .info-card {
+        width: 100%;
+    }}
+
+button, .btn-update, .editingen {
+    background-color: #005f73;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-cancel {
+    background-color: #d64538;
+    text-decoration: none;
+    color: #ccc;
+}
+
+button:hover, .btn-update:hover, .btn-cancel:hover, .editingen:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #156473;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero, .products, .info-card {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+select, input[type="number"], button {
+    font-family: 'Quicksand', sans-serif;
+    border: 1px solid #ddd; /* Daha hafif sınır */
+    border-radius: 5px; /* Hafif yuvarlak köşeler */
+    padding: 10px 90px;
+    margin: 8px 0; /* Düzenli aralıklar */
+    box-sizing: border-box; /* Doğru boyutlandırma için */
+    
+}
+
+button:hover {
+    background-color: #45a049; /* Düğmeye üzerine gelindiğinde renk değişikliği */
+    text-decoration: none;
+}
+
+h2, .form-section {
+    text-align: center;
+    background-color: #ffffff5e;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 16px auto; /* Üst ve alt marjin ekle, sağ ve sol otomatik */
+  margin-bottom: 24px;
+}
+
+.form-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px; /* Hafif yuvarlak köşeler */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Hafif bir gölge */
+    margin: 16px; /* Etrafında biraz boşluk */
+    max-width: 500px; /* Maksimum genişlik */
+    margin-left: auto; /* Ortalamak için */
+    margin-right: auto; /* Ortalamak için */
+}
+
+@media (max-width: 768px) {
+    .form-section {
+        margin: 16px;
+    }
+}
+
+/* Bu stil seçicisi, görseldeki form elemanlarını ve butonu hedef alır */
+#calorieCalculator {
+    background-color: #ffffff9c; /* Beyaz arka plan rengi */
+    border-radius: 10px; /* Kenarları yuvarlat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekle */
+    padding: 20px; /* İç boşluk */
+    max-width: 500px; /* Maksimum genişlik */
+
+}
+
+#calorieCalculator label {
+    font-weight: bold; /* Etiket metinlerini kalın yap */
+    color: #333333; /* Metin rengi */
+    margin-bottom: 10px; /* Etiket altındaki boşluğu ayarla */
+    display: block; /* Blok seviye eleman yap */
+}
+
+#calorieCalculator .form-select {
+    border: 1px solid #cccccc; /* Kenarlık */
+    border-radius: 5px; /* Kenarlık yuvarlaklığını ayarla */
+    padding: 10px; /* İç boşluk */
+    margin-bottom: 20px; /* Altındaki boşluğu ayarla */
+}
+
+#calculate {
+    background-color: #4CAF50; /* Yeşil arka plan rengi */
+    color: white; /* Metin rengi beyaz */
+    border: none; /* Kenarlık kaldır */
+    padding: 10px 20px; /* İç boşluk */
+    text-transform: uppercase; /* Metin büyük harf */
+    border-radius: 5px; /* Kenarlık yuvarlaklığını ayarla */
+    cursor: pointer; /* İmleci pointer yap */
+    transition: background-color 0.3s ease; /* Arka plan rengi geçişi yumuşat */
+}
+
+#calculate:hover {
+    background-color: #45a049; /* Hover durumunda butonun rengini değiştir */
+}
+
+/* Bu stil seçicisi, sonuç metnini hedef alır */
+#dailyCalorieIntake {
+    background-color: #f8f8f8; /* Hafif gri arka plan rengi */
+    border-left: 10px solid #4CAF50; /* Sol tarafta yeşil bir çubuk ekle */
+    margin-top: 20px; /* Üstündeki boşluğu ayarla */
+    margin-left: 0px;
+    width: 40%;
+    color: black;
+}
+
+.gunlukKalori{
+    margin-left: 0px;
+    margin-top: 90px;
+    font-size: calc(1.3rem + .6vw);
+}.assist_info {
+    padding: 20px 0;
+    max-width: 1200px; /* Sayfanın genel genişliği */
+    margin: 50px auto 0; /* Üst marj ile içerik arasındaki boşluk */
+    font-family: 'Quicksand', sans-serif; /* Font ailesini Quicksand yapar */
+}
+
+.assist_info h1, .assist_info h2 {
+    color: #2C3E50; /* Başlık rengini koyu bir maviye ayarlar */
+}
+
+.assist_info h2 {
+    margin-top: 1rem; /* Üst başlıklara marj ekler */
+    font-size: 1.75rem; /* Font boyutunu büyütür */
+}
+
+.assist_info p {
+    font-size: 1rem; /* Paragraf font boyutu */
+    line-height: 1.8; /* Satır yüksekliğini artırır */
+    color: #555; /* Paragraf rengini yumuşak bir gri yapar */
+}
+
+.firstSec h1, .firstSec p {
+    text-align: center;
+    margin-bottom: 1rem; /* Alt marj ekler */
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.assist_info .container {
+    perspective: 1000px; /* Derinlik perspektifi için */
+}
+
+.info-card {
+    background: #8ac1ac96; /* Beyaz arka plan */
+    width: 80%; 
+    margin-left: auto; /* Otomatik marj kartı merkeze alır */
+    margin-right: auto; /* Otomatik marj kartı merkeze alır */
+    border-radius: 10px; /* Hafif yuvarlatılmış köşeler */
+    overflow: hidden; /* Yuvarlatılmış köşeler için gerekli */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    margin-bottom: 30px; /* Kartlar arası boşluk */
+}
+.card-inner {
+    width: 100%;
+    height: 250px; /* Kart yüksekliği, içeriğe bağlı olarak ayarlayın */
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.info-card:hover .card-inner {
+    transform: rotateY(180deg); /* Dönme efekti */
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Kartın arka yüzünü gizler */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-front {
+    background-color: #e6e6e69e; /* Düz beyaz arka plan */
+    color: #333; /* Okunabilirlik için koyu renk metin */
+    display: flex;
+    flex-direction: column; /* İçeriği dikey olarak düzenle */
+    justify-content: center; /* İçeriği yatayda ortala */
+    align-items: center; /* İçeriği dikeyde ortala */
+    padding: 20px;
+}
+
+.card-front h2 {
+    color: #2C3E50; /* Başlık için koyu renk */
+    margin-bottom: 0.5rem; /* Başlık altındaki boşluk */
+    font-size: 2.1rem; /* Başlık font boyutu */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Başlığa hafif gölge efekti */
+    margin-top: -20px; 
+}
+
+.card-front p {
+    font-size: 1rem; /* Paragraf font boyutu */
+    margin-bottom: 1rem; /* Paragraf altındaki boşluk */
+}
+
+.card-back {
+    background-color: #e6e6e69e;
+    color: #fff;
+    transform: rotateY(180deg); /* Arka yüzün başlangıç pozisyonu */
+    padding: 20px;
+    text-align: left;
+}
+#caloricDeficitInfo {
+    background-color: #f0f8ff; /* Açık mavi bir arka plan rengi */
+    border-left: 5px solid #007bff; /* Mavi bir kenarlık */
+    padding: 20px; /* İçerik ve kenarlık arasında boşluk */
+    margin: 20px 0; /* Üst ve altta boşluk */
+    border-radius: 5px; /* Köşeleri yuvarlaklaştır */
+    color: #333; /* Metin rengi */
+    font-family: 'Quicksand', sans-serif; /* Yazı tipi */
+}
+
+.info-card .card-inner .card-back .bottom-button {
+    position: absolute; /* Butonun konumunu ayarla */
+    bottom: 10px; /* Alt kenardan 10px yukarıda */
+    left: 50%; /* Sol kenardan yüzde 50 oranında */
+    transform: translateX(-50%); /* Butonu tam ortada hizalama */
+    /* Diğer stiller */
+}

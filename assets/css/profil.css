@@ -1,0 +1,151 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('../images/asistanim.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+/* Navbar Stilleri */
+.navbar {
+    background-color: #005f73;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.5em; /* Logo font boyutunu büyüt */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Kart Stilleri */
+.card {
+    background: #ffffffee; /* Beyaz arka plana hafif opaklık */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden; /* Köşeleri yuvarlatılmış kartların içindeki içeriğin dışarı taşmasını önler */
+}
+
+.card-header {
+    background-color: #005f73;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 1.25em;
+}
+
+.list-group-item {
+    display: flex; /* Flexbox ile içerikleri hizala */
+    align-items: center; /* İçerikleri dikeyde ortala */
+    padding: 20px; /* List item iç padding */
+}
+
+/* Form Elemanları Stilleri */
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.375rem 0.75rem;
+    margin-right: -5rem; /* Butonlarla arasına mesafe ekle */
+}
+
+/* Buton Stilleri */
+.btn-edit, .btn-save {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #17a2b8;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-save {
+    background-color: #28a745;
+}
+
+.btn-edit:hover, .btn-save:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Tasarım İçin Medya Sorguları */
+@media (max-width: 768px) {
+    .navbar, .card, .form-control, .btn-primary {
+        width: 100%;
+    }
+
+    .list-group-item {
+        flex-direction: column; /* Mobil cihazlarda dikey hizalama */
+        align-items: flex-start; /* Elemanları sol tarafa yasla */
+    }
+}
+
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.75rem; /* Başlık font boyutunu artır */
+    font-weight: 500; /* Font ağırlığını orta yap */
+    color: #005f73; /* Başlık rengini marka rengiyle eşleştir */
+}
+
+.card-text {
+    font-size: 1.25rem; /* Metin font boyutunu artır */
+    color: #333; /* Metin rengi */
+    margin-top: 10px; /* Üstten boşluk ekle */
+}
+
+/* Hoş Geldin mesajını özelleştir */
+.welcome-message {
+    background-color: #f8f9fa; /* Arka plan rengi */
+    border-bottom: 3px solid #005f73; /* Alt kenarlık ekle */
+    text-align: center; /* Metni ortala */
+}
+
+/* Metni özelleştir */
+.welcome-message h5 {
+    margin: 0; /* Margin sıfırla */
+    padding: 15px; /* İç boşluk ekle */
+    font-size: 2rem; /* Font boyutu */
+    font-weight: bold; /* Yazı tipi ağırlığı */
+    color: #005f73; /* Yazı tipi rengi */
+}
+
+/* Kullanıcı bilgi kartı için stil */
+.user-info-card {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Daha belirgin gölge */
+    border-radius: 15px; /* Yuvarlak köşeler */
+    overflow: hidden; /* İçeriği kartın dışına taşmamasını sağla */
+}
+
+.auth-links {
+    display: flex; /* Flex container olarak ayarla */
+    align-items: center; /* Dikeyde ortala */
+}
+
+.auth-links a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #0a9396;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Butonların düzgün görünmesini sağla */
+    text-align: center; /* Metni ortala */
+    /* Eğer bütün butonların aynı genişlikte olmasını istiyorsanız aşağıdaki satırı ekleyin */
+    /* width: 120px; */
+}
+
+
+.auth-links a:hover {
+    background-color: #94d2bd;
+}

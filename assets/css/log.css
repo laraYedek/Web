@@ -1,0 +1,101 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.login-background {
+    
+    min-height: 100vh; /* Tam ekran yüksekliği */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9); /* Yarı saydam beyaz arka plan */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.form-control {
+    border-radius: 20px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-login, .btn-secondary, .btn-home {
+    border-radius: 20px;
+    padding: 0.75rem 1rem;
+    border: none;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.btn-login {
+    background-color: #ff4081;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f50057;
+    color: white;
+}
+
+.btn-home {
+    background-color: #7c4dff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+.login-container .additional-info {
+    margin-top: 20px; /* Butonlardan biraz uzaklaştır */
+    font-size: 0.9em; /* Yazı boyutunu ayarla */
+    text-align: center; /* Metni merkeze al */
+    color: #333; /* Metin rengini ayarla */
+}
+
+.login-container .additional-info a {
+    color: #007bff; /* Bağlantı rengini ayarla */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+}
+
+.login-container .additional-info a:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde alt çizgi ekle */
+}
+
+
+.password-toggle-button {
+    position: absolute;
+    right: 10px; /* Adjust this value as needed to position the icon inside the input */
+    top: 65%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+}
+
+/* Resize the image inside the button if necessary */
+.password-toggle-button img {
+    width: 40px; /* Adjust the width as needed */
+  
+}

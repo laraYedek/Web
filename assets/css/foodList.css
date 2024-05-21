@@ -1,0 +1,98 @@
+body {
+    background-color: #c9b271;
+    font-family: 'Roboto', sans-serif;
+  }
+.tarif-kart {
+    background-color: #ffffff;
+    margin: 1rem auto;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    max-width: 800px; /* Kart genişliği */
+    transition: transform 0.2s; /* Hover efekti için geçiş süresi */
+}
+.tarif-kart:hover {
+    transform: scale(1.02); /* Hover'da kartı büyüt */
+  }
+  
+
+h2 {
+    font-size: 1rem; /* Bootstrap ölçü birimlerine uygun başlık boyutu */
+    margin-top: 0; /* Üst boşluğu kaldır */
+    margin-bottom: 0.5rem; /* Alt boşluk */
+    color: #e67e22;
+}
+
+h3 {
+    font-size: 1.25rem; /* Daha büyük başlık boyutu */
+    margin-bottom: 0.75rem; /* Daha büyük alt boşluk */
+    color: #e67e22;
+}
+
+p {
+    font-size: 0.875rem; /* Paragraf boyutu */
+    color: #555; /* Paragraf rengi */
+    margin-bottom: 0.5rem; /* Paragraf alt boşluğu */
+    line-height: 1.6;
+}
+
+/* Bootstrap yanıtlayıcılığını ve ızgara sistemini kullanarak mobil görünümü iyileştirin */
+@media (max-width: 768px) {
+    .tarif-kart {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.navbar, .footer {
+    background: #333;
+    color: white;
+}
+
+.navbar a, .footer a, .btn-outline-primary, .btn-outline-secondary {
+    color: white;
+}
+
+.btn-primary, .btn-secondary, .btn-home {
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover, .btn-outline-primary:hover, .btn-home:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.btn-home {
+    background-color: #28a745;
+}
+
+
+.footer {
+    padding: 1rem 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.d-grid {
+    display: grid;
+    grid-gap: 0.5rem;
+}
+
